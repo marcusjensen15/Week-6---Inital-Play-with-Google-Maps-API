@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Beer Friends</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id=beers>
+      <h1>Beer Friends</h1>
+      <label for="abv">Which level of abv. do you prefer in your beer?</label>
+      <h3>Abv:</h3>
+            <div class="form-group">
+            <div class="radio">
+            <h5><input name="abv" type="radio" value="low"> Low 1%-4%<span id="abv"></h5>
+          </div>
+            <div class="radio">
+              <h5><input name="abv" type="radio" value="med"> Medium 4%-7%<span id="abv"></h5>
+            </div>
+            <div class="radio">
+              <h5><input name="abv" type="radio" value="high"> High 7%-15%</h5>
+            </div>
+          </div>
+          <button class="btn-success" id="beersearch">Drink up!</button>
+        </form>
+      <div class="errors"></div>
+      <div class="showBeerName"></div>
+      <div class="showBeerAbv"></div>
+      <div class="showBeerDescription"></div>
+      <div class="showImage"></div>
+    </div>
+  </body>
+</html>
