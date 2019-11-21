@@ -22,6 +22,20 @@
           <button class="btn-success" id="beersearch">Drink up!</button>
         </form>
       <div class="errors"></div>
+
+      <div id="map"></div>
+          <script>
+            var map;
+            function initMap() {
+              map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: -34.397, lng: 120.644},
+                zoom: 8
+              });
+            }
+          </script>
+          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANuCVfzmLRaTmt-ULf1dcsmcWcel1XcdE&callback=initMap"
+          async defer></script>
+
       <div class="showBeerName"></div>
       <div class="showBeerAbv"></div>
       <div class="showBeerDescription"></div>
