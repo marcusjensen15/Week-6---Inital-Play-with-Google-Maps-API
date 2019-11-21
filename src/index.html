@@ -19,27 +19,47 @@
               <h5><input name="abv" type="radio" value="high"> High 7%-15%</h5>
             </div>
           </div>
+          <label for="joke">Which type of joke do you want to hear?</label>
+                <div class="form-group">
+                <div class="radio">
+                <h5><input name="joke" type="radio" value="Miscellaneous"> Miscellaneous<span id="joke"></h5>
+              </div>
+                <div class="radio">
+                  <h5><input name="joke" type="radio" value="Programming"> Programming<span id="joke"></h5>
+                </div>
+                <div class="radio">
+                  <h5><input name="joke" type="radio" value="Dark">Dark</h5>
+                </div>
+              </div>
+              <div class="radio">
+                <h5><input name="joke" type="radio" value="Any">Any</h5>
+              </div>
+            </div>
           <button class="btn-success" id="beersearch">Drink up!</button>
         </form>
       <div class="errors"></div>
-
-      <div id="map"></div>
-          <script>
-            var map;
-            function initMap() {
-              map = new google.maps.Map(document.getElementById('map'), {
-                center: {lat: -34.397, lng: 120.644},
-                zoom: 8
-              });
-            }
-          </script>
-          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANuCVfzmLRaTmt-ULf1dcsmcWcel1XcdE&callback=initMap"
-          async defer></script>
-
       <div class="showBeerName"></div>
       <div class="showBeerAbv"></div>
       <div class="showBeerDescription"></div>
+      <div class="showJoke"></div>
+      <div class="showSetup"></div>
+      <div class="showDelivery"></div>
       <div class="showImage"></div>
     </div>
   </body>
 </html>
+
+
+
+<!-- <div id="map"></div>
+<script>
+var map;
+function initMap() {
+map = new google.maps.Map(document.getElementById('map'), {
+center: {lat: -34.397, lng: 120.644},
+zoom: 8
+});
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANuCVfzmLRaTmt-ULf1dcsmcWcel1XcdE&callback=initMap"
+async defer></script> -->
